@@ -1,0 +1,149 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1e1e2f;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+#root {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #a78bfa;
+}
+
+input {
+  padding: 12px 15px;
+  border: 1px solid #44445a;
+  border-radius: 8px;
+  background: #2b2b40;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #a78bfa;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+body > #root > input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+form input {
+  flex: 1;
+  min-width: 0;
+}
+
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #8b5cf6;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #7c3aed;
+  transform: translateY(-1px);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  background: #2b2b40;
+  border: 1px solid #3d3d55;
+  border-radius: 10px;
+}
+
+li span {
+  flex: 1;
+  min-width: 100px;
+  overflow-wrap: anywhere;
+}
+
+li button {
+  padding: 9px 12px;
+}
+
+li button:first-of-type {
+  background: #ef4444;
+}
+
+li button:first-of-type:hover {
+  background: #dc2626;
+}
+
+li .editButton {
+  background: #0d9488;
+}
+
+li .editButton:hover {
+  background: #0f766e;
+}
+
+.editInput {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 25px 12px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  form {
+    flex-wrap: wrap;
+  }
+
+  form input {
+    flex-basis: 100%;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  li {
+    gap: 8px;
+  }
+}
